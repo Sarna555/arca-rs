@@ -1,0 +1,19 @@
+[package]
+name = "arca"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+arrow = "32.0.0"
+arrow-flight = "32.0.0"
+arrow-csv = "32.0.0"
+tonic = { version = "0.8", default-features = false, features = ["transport", "codegen", "prost"] }
+tokio = { version = "1.0", default-features = false, features = ["macros", "rt", "rt-multi-thread"] }
+futures = { version = "0.3", default-features = false, features = ["alloc"] }
+arrow-array = "32.0.0"
+datafusion = "17.0.0"
+arrow-schema = "32.0.0"
+
+amqprs = "1.1.0"
